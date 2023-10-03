@@ -5,15 +5,11 @@
 
 int main(int argc, char *argv[]) 
 {
-	int i;
-	
-	scanf("정수 하나를 입력하시오 :%d", &i);
-	
-	printf("입력하신 정수 %d의 ", i);
-	if (i<0)
-		i=i*-1;
-	printf("절대값은 %d 입니다.", i);
-	
+	char c;
+	int n;
+	 while ( (c = getchar()) != '\n')
+	 	if(c >= '0' && c <= '9') n = n+1;
+	printf("문자열의 길이는 %d 입니다.\n", n);
 	system("PAUSE");
 	return 0;
 }
