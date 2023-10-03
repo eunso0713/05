@@ -5,11 +5,18 @@
 
 int main(int argc, char *argv[]) 
 {
-	char c;
-	int n;
-	 while ( (c = getchar()) != '\n')
-	 	if(c >= '0' && c <= '9') n = n+1;
-	printf("문자열의 길이는 %d 입니다.\n", n);
+	int n, i;
+	int sum;
+	
+	
+	printf("input a number: ");
+	scanf("%d",&i);
+	sum=0;
+	for(n=1; n<=i;  n++)
+		sum=sum+n;
+	printf("The result is ");
+	printf("%d\n", sum);
+	
 	system("PAUSE");
 	return 0;
 }
