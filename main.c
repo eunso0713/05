@@ -5,30 +5,26 @@
 
 int main(int argc, char *argv[]) 
 {
-	int a, b, result;
-	char c;
-	printf("enter the calculation: ");
+	int answer=59;
+	int t, i;
+	t=0;
+	do
+	{
+		t+=1; i = 0;
+		printf("Guess a number: ");
+		scanf("%d", &i);
+		if (i>answer) 
+			printf("high!\n"); 
+		else if (i<answer)
+			printf("low!\n");
+		else
+			break;
+	}
+	while (i!=answer);
 	
-	scanf("%d%c%d", &a, &c, &b);
+	printf("Congratulations! trials: %d\n", t);
 	
-	switch(c){
-		case '+':
-			result=a+b;
-			break;
-		case '-':
-			result=a-b;
-			break;
-		case '*':
-			result=a*b;
-			break;
-		case '/':
-			result=a/b;
-			break;
-		default:
-			printf("¿À·ù\n");
-			break;
-			}
-		printf("%d\n", result);
+	
 	system("PAUSE");
 	return 0;
 }
