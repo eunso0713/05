@@ -24,6 +24,9 @@ int main(int argc, char *argv[])
 		case '/':
 			result=a/b;
 			break;
+		default:
+			printf("¿À·ù\n");
+			break;
 			}
 		printf("%d\n", result);
 	system("PAUSE");
